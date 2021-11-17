@@ -1,0 +1,299 @@
+* {
+    margin: 0;    
+    outline:0;    
+    padding: 0;    
+    vertical-align:baseline;    
+    box-sizing: border-box;    
+    font-weight: inherit;    
+    font-family: inherit;    
+    font-style: inherit;    
+    font-size: 100%;    
+    }
+
+
+body {
+    background: url('../images/bg-mobile.svg') no-repeat hsl(257, 40%, 49%);
+    color: #fff;
+    font: 400 16px 'Open sans', sans-serif;
+
+position: absolute;
+height: auto;
+        
+        
+}
+
+
+
+#container {
+
+    position: absolute;
+height: 100vh;
+width: 100vw;
+
+overflow: hidden;
+
+
+    display: grid;
+
+
+    padding: 2rem;
+
+    text-align: center;
+    justify-content: center;
+
+    border: 1px solid #fff;
+
+}
+
+header {
+    display: grid;
+    margin-bottom: 3.5rem;
+
+    text-align: left;
+   
+
+
+
+}
+
+header img {   
+
+    width: 40%;
+}
+
+
+
+
+
+aside img {
+    width: 100%;
+
+    margin-bottom: 1.5rem;    
+
+
+}
+
+
+main {
+
+    margin-bottom: 0.5rem;
+
+
+}
+
+.page-header {
+    font: 600 1.5rem 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+
+
+
+}
+
+.text {
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+
+button.button {
+    cursor: pointer;
+    color: hsl(257, 40%, 49%);
+    border: 0;
+    padding: 0.75rem ;
+    width:210px;
+    border-radius: 32px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,);
+    margin-bottom: 2.5rem;
+}
+
+button.button:hover {
+    background:  hsl(300, 69%, 71%);
+    color: #fff;
+    transition:0.2s;
+   
+}
+
+
+ .icons {
+
+        width:100%;
+
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    grid-template-rows: 1fr;   
+    justify-content: center;
+    gap: 25px;
+   
+
+    
+    margin-bottom: 1.5rem;
+}
+
+.circle-div {
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+
+  border-radius: 100%; 
+  width: 40px;
+  height:40px;
+
+    border: 2.5px solid #fff;
+}
+
+.circle-div:hover {
+    border: 2.5px solid hsl(300, 69%, 71%);
+    transition: 0.2s;
+    
+}
+
+img.icons-img {
+
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+    width: 18px;
+    height: 18px;
+    
+}
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  
+  }
+
+  .attribution a {
+    color:hsl(300, 69%, 71%);
+  }
+
+
+  /*========== MEDIA QUERIES==========*/
+
+@media (min-width: 768px) {
+
+    body {
+        background: url('../images/bg-desktop.svg')  hsl(257, 40%, 49%);
+        color: #fff;
+        font: 400 16px 'Open sans', sans-serif;  
+      height:100vh;
+        
+            
+            
+    }
+
+
+    #container {
+        position: absolute;
+         height:100vh;
+        border: 1px solid red;
+
+    
+        
+
+    
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        grid-template-rows: 20vh 70vh 10vh;
+        grid-template-areas: "header header"
+        "aside main"
+        "footer footer";
+
+
+        padding: 2rem;
+
+        text-align: center;
+        justify-content: center;
+    
+    }
+
+    
+    aside { 
+        grid-area: aside;
+    
+    }    
+
+    
+    main {
+        grid-area: main; 
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        padding:2rem;
+
+        display: grid;
+    
+    }
+
+    .text {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .text h2 {
+
+    
+        font-size:3rem;
+        text-align: left;
+        
+    }
+    .text p {
+
+
+        font-size: 1.25rem
+    }
+
+   #div-button {     
+       display: grid;
+
+    }
+
+ button.button {
+     height: 3.5rem;    
+     font-size: 1.12rem;
+ }
+
+ .icons {
+
+    position: absolute;
+    bottom: 0;
+    right: 6rem;
+    display: grid;
+
+
+
+    width:100%;
+
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 1fr;   
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 25px;
+   
+
+    
+    margin-bottom: 1.5rem;
+  
+ }
+
+
+    footer {
+        grid-area: footer;
+    }
+
+}
