@@ -30,7 +30,7 @@ height: auto;
 height: 100vh;
 width: 100vw;
 
-overflow: hidden;
+
 
 
     display: grid;
@@ -41,7 +41,7 @@ overflow: hidden;
     text-align: center;
     justify-content: center;
 
-    border: 1px solid #fff;
+
 
 }
 
@@ -185,7 +185,39 @@ img.icons-img {
 
   /*========== MEDIA QUERIES==========*/
 
-@media (min-width: 768px) {
+  @media  (min-width: 400px){
+
+    body {
+        background: url('../images/bg-desktop.svg')  hsl(257, 40%, 49%);
+        color: #fff;
+        font: 400 16px 'Open sans', sans-serif;  
+      height:100vh;
+
+        
+            
+            
+    }
+
+
+
+  }
+
+
+  @media  (min-width:600px) and (max-width:1023px) {
+    aside img {
+        width: 80%;
+    
+        margin-bottom: 1.5rem;    
+    
+    
+    }
+
+  }
+
+
+
+
+@media (min-width: 1024px)  {
 
     body {
         background: url('../images/bg-desktop.svg')  hsl(257, 40%, 49%);
@@ -230,9 +262,7 @@ img.icons-img {
     
     main {
         grid-area: main; 
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-
+       
         padding:2rem;
 
         display: grid;
@@ -252,47 +282,54 @@ img.icons-img {
         
     }
     .text p {
-
-
         font-size: 1.25rem
     }
 
    #div-button {     
        display: grid;
+   
 
     }
 
  button.button {
      height: 3.5rem;    
      font-size: 1.12rem;
+
  }
 
- .icons {
 
-    position: absolute;
-    bottom: 0;
-    right: 6rem;
-    display: grid;
-
-
-
-    width:100%;
-
-    grid-template-columns: 40px 40px 40px;
-    grid-template-rows: 1fr;   
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 25px;
-   
-
-    
-    margin-bottom: 1.5rem;
-  
- }
 
 
     footer {
-        grid-area: footer;
+        grid-area: footer;        
+       
+     
     }
 
+}
+
+@media (min-width: 1440px) {
+    .icons {
+
+        position: absolute;
+        bottom: 0;
+        
+        right: 6rem;
+        display: grid;
+    
+    
+    
+        width:100%;
+    
+        grid-template-columns: 40px 40px 40px;
+        grid-template-rows: 1fr;   
+        justify-content: flex-end;
+        align-items: flex-end;
+        gap: 25px;
+       
+    
+        
+        margin-bottom: 1.5rem;
+      
+     }
 }
